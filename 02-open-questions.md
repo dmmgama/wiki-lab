@@ -34,8 +34,8 @@ Este documento regista dúvidas, tensões, hipóteses e perguntas em aberto que 
 ## Q-002 — What is the right topology: single repo with namespaces, or something else?
 **Status:** decided  
 **Why it matters:** esta decisão afeta governação, semântica, manutenção, legibilidade e escala.  
-**Resolution:** repositório único com namespaces fortes. Critérios de extração futura definidos.  
-**Decided by:** `decisions/ADR-001-single-repo-with-namespaces.md`, `governance/namespaces-and-boundaries.md`.
+**Resolution:** repositório único com namespaces fortes. Critérios de extração futura definidos. Phase 2 refinou a granularidade para 7 namespaces operacionais (Opção B) — princípio arquitectural mantido, apenas a lista de namespaces mudou.  
+**Decided by:** `meta/decisions/ADR-001-single-repo-with-namespaces.md`, `meta/decisions/ADR-003-topology-7namespaces.md`, `meta/governance/namespaces-and-boundaries.md`.
 
 ## Q-003 — What should live in research and never be promoted to the wiki?
 **Status:** decided  
@@ -58,8 +58,8 @@ Este documento regista dúvidas, tensões, hipóteses e perguntas em aberto que 
 ## Q-006 — How to avoid semantic black-box behavior?
 **Status:** decided  
 **Why it matters:** o utilizador quer evitar um sistema onde o grafo, tags e relações deixam de ser inteligíveis.  
-**Resolution:** relações explícitas via links/índices, provenance obrigatória, meta-schema mínimo com campos validáveis, sem grafos/tags opacos.  
-**Decided by:** `governance/metadata-and-frontmatter.md`, `governance/namespaces-and-boundaries.md` (secção "Evita Caixa-Preta Semântica").
+**Resolution:** relações explícitas via links/índices, provenance obrigatória, meta-schema mínimo com campos validáveis, sem grafos/tags opacos. Phase 2 reforça: RULES.md locais por namespace tornam os schemas ainda mais explícitos e auditáveis.  
+**Decided by:** `meta/governance/metadata-and-frontmatter.md`, `meta/governance/namespaces-and-boundaries.md` (secção "Evita Caixa-Preta Semântica"), `meta/decisions/ADR-003-topology-7namespaces.md`.
 
 ## Q-007 — What exactly is wiki-lab now?
 **Status:** researching  

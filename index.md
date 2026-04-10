@@ -3,7 +3,7 @@ title: Wiki Lab — Índice Principal
 status: decision
 confidence: high
 updated: 2026-04-10
-provenance: ["ADR-001", "00-space-manual.md"]
+provenance: ["ADR-003-topology-7namespaces.md", "ADR-001", "00-space-manual.md"]
 ---
 
 # Wiki Lab — Índice
@@ -16,35 +16,39 @@ provenance: ["ADR-001", "00-space-manual.md"]
 - [agents.md](agents.md) — instruções para agentes LLM.
 - [roadmap/ide-roadmap.md](roadmap/ide-roadmap.md) — fonte de verdade de execução.
 - [handoff.md](handoff.md) — checkpoint vivo da última sessão.
+- [log.md](log.md) — registo cronológico de mudanças materiais.
+- [RULES.md](RULES.md) — schema universal (meta-schema global).
 
 ## Namespaces
 
 | Namespace | Pasta | Índice | Descrição |
 |-----------|-------|--------|-----------|
-| engineering | `engineering/` | [_index.md](engineering/_index.md) | Engenharia estrutural, Eurocódigos, SAP2000/ETABS |
-| systems-ai | `systems-ai/` | [_index.md](systems-ai/_index.md) | Arquitectura wiki, agents, retrieval |
-| personal | `personal/` | [_index.md](personal/_index.md) | Carreira, financeiro |
-| shared | `shared/` | [_index.md](shared/_index.md) | Governance, ADRs transversais, registry |
+| work | `work/` | [index.md](work/index.md) | Engenharia estrutural, carreira, sistemas, ferramentas |
+| patrimonio | `patrimonio/` | [index.md](patrimonio/index.md) | Activos, imóveis, investimentos, fiscal |
+| familia | `familia/` | [index.md](familia/index.md) | Co-parentalidade, Siena, dinâmicas familiares |
+| relacoes | `relacoes/` | [index.md](relacoes/index.md) | Relações íntimas, amizades, profissionais |
+| saude | `saude/` | [index.md](saude/index.md) | Saúde física, mental, rotinas |
+| dev-pessoal | `dev-pessoal/` | [index.md](dev-pessoal/index.md) | Autoconhecimento, padrões, reflexão pessoal |
+| meta | `meta/` | [index.md](meta/index.md) | Governance, ADRs, bases conceptuais do sistema |
+| shared | `shared/` | [_index.md](shared/_index.md) | Registry de namespaces, utilitários transversais |
 
-## Conteúdo transversal
+## Schemas locais
+- [RULES.md](RULES.md) — schema universal (todos os namespaces).
+- [work/RULES.md](work/RULES.md), [patrimonio/RULES.md](patrimonio/RULES.md), [familia/RULES.md](familia/RULES.md), [relacoes/RULES.md](relacoes/RULES.md), [saude/RULES.md](saude/RULES.md), [dev-pessoal/RULES.md](dev-pessoal/RULES.md), [meta/RULES.md](meta/RULES.md)
 
-### Governance
-- [governance/metadata-and-frontmatter.md](governance/metadata-and-frontmatter.md)
-- [governance/namespaces-and-boundaries.md](governance/namespaces-and-boundaries.md)
-- [governance/research-to-decision.md](governance/research-to-decision.md)
+## Governance e Decisions
+- [meta/governance/metadata-and-frontmatter.md](meta/governance/metadata-and-frontmatter.md)
+- [meta/governance/namespaces-and-boundaries.md](meta/governance/namespaces-and-boundaries.md)
+- [meta/governance/research-to-decision.md](meta/governance/research-to-decision.md)
+- [meta/decisions/ADR-001-single-repo-with-namespaces.md](meta/decisions/ADR-001-single-repo-with-namespaces.md)
+- [meta/decisions/ADR-002-wiki-canonical-role.md](meta/decisions/ADR-002-wiki-canonical-role.md)
+- [meta/decisions/ADR-003-topology-7namespaces.md](meta/decisions/ADR-003-topology-7namespaces.md)
 
-### Decisions
-- [decisions/ADR-001-single-repo-with-namespaces.md](decisions/ADR-001-single-repo-with-namespaces.md)
-- [decisions/ADR-002-wiki-canonical-role.md](decisions/ADR-002-wiki-canonical-role.md)
-
-### Foundations
-- [foundations/00-what-is-an-llm-wiki.md](foundations/00-what-is-an-llm-wiki.md)
+## Foundations
+- [meta/foundations/00-what-is-an-llm-wiki.md](meta/foundations/00-what-is-an-llm-wiki.md)
 
 ## Tooling
 - [prompts/ide-implementation-001.md](prompts/ide-implementation-001.md) — prompt de implementação IDE.
 - [shared/registry.md](shared/registry.md) — registry de namespaces.
-- [templates/](templates/) — templates para research notes, wiki pages, ADRs, open questions.
+- [templates/](templates/) — templates para research notes, wiki pages, ADRs, RULES.md.
 - [scripts/validate.py](scripts/validate.py) — validação de frontmatter e links.
-
-## Nota sobre estrutura
-As pastas `governance/`, `decisions/` e `foundations/` permanecem na raiz. A topologia actual é navegável, validada e semanticamente clara. Migração física adiada indefinidamente — só justificável com benefício operacional explícito.

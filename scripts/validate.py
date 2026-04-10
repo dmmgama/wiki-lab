@@ -30,8 +30,8 @@ FRONTMATTER_RE = re.compile(r"^---\s*\n(.*?)\n---", re.DOTALL)
 LINK_RE = re.compile(r"\[([^\]]*)\]\(([^)]+)\)")
 
 # Pattern para naming: lowercase, hyphens, digits, underscores, dots
-# Aceita prefixo underscore (_index.md) e maiúsculas em prefixo ADR (ADR-001-*.md)
-VALID_NAME_RE = re.compile(r"^(_?[a-z0-9][a-z0-9._-]*\.md|ADR-\d{3}[a-z0-9-]*\.md)$")
+# Aceita prefixo underscore (_index.md), maiúsculas ADR (ADR-001-*.md) e RULES.md convencional
+VALID_NAME_RE = re.compile(r"^(_?[a-z0-9][a-z0-9._-]*\.md|ADR-\d{3}[a-z0-9-]*\.md|RULES\.md)$")
 
 
 def parse_frontmatter(text: str) -> dict | None:
