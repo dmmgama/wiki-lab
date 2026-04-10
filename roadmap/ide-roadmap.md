@@ -25,6 +25,8 @@ Este ficheiro é a fonte de verdade para o estado de execução do projecto.
 - `agents.md` actualizado com regras de arranque, persistência, handoff e roadmap.
 - `00-space-manuald.md` removido (versão antiga pré-ADR-001).
 - Decisão: **não migrar pastas** (`governance/`, `decisions/`, `foundations/` permanecem na raiz). Topologia actual é definitiva até justificação operacional.
+- Git inicializado, `.gitignore` criado, `README.md` criado.
+- Repo publicado em GitHub privado: https://github.com/dmmgama/wiki-lab.git (branch `main`, 26 ficheiros).
 
 ### Questões fechadas
 - Q-002 → `decided` (ADR-001, namespaces-and-boundaries.md)
