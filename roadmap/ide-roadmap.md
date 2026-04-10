@@ -29,14 +29,16 @@ Este ficheiro é a fonte de verdade para o estado de execução do projecto.
 - Repo publicado em GitHub privado: https://github.com/dmmgama/wiki-lab.git (branch `main`, 26 ficheiros).
 
 ### Questões fechadas
+- Q-001 → `decided` (`decisions/ADR-002-wiki-canonical-role.md`)
 - Q-002 → `decided` (ADR-001, namespaces-and-boundaries.md)
 - Q-003 → `decided` (research-to-decision.md)
 - Q-004 → `decided` (shared/registry.md, agents.md)
 - Q-006 → `decided` (metadata-and-frontmatter.md, namespaces-and-boundaries.md)
 
 ### Em aberto
-- Q-001 — papel canónico da wiki → `researching` (foundations cobre parcialmente, falta ADR).
-- Q-005, Q-007–Q-010 → `open`.
+- Q-005 → `open`.
+- Q-007 → `researching`.
+- Q-008–Q-010 → `open`.
 
 ## Objectivo corrente
 Implementar a primeira camada operacional do repo sem alterar arquitectura.
@@ -50,7 +52,7 @@ Implementar a primeira camada operacional do repo sem alterar arquitectura.
 ## Phase 2 — Add content
 - Create first content pages inside namespaces.
 - Add one or two seed pages per namespace.
-- Close Q-001 with ADR if needed.
+- Definir `RULES.md` local por namespace onde fizer sentido.
 
 ## Phase 3 — Operational workflow
 - Refine templates.
@@ -63,5 +65,5 @@ Implementar a primeira camada operacional do repo sem alterar arquitectura.
 - Preferir simplicidade e auditabilidade.
 
 ## Próximo passo
-Opção A: criar conteúdo seed nos namespaces (1–2 páginas por namespace).
-Opção B: fechar Q-001 com ADR formal sobre o papel canónico da wiki.
+Opção A: definir `RULES.md` local por namespace para a Phase 2.
+Opção B: criar conteúdo seed nos namespaces (1–2 páginas por namespace).

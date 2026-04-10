@@ -9,55 +9,41 @@ provenance: ["roadmap/ide-roadmap.md", "agents.md"]
 # Handoff — 2026-04-10
 
 ## Current state
-Phase 1 (Validate and stabilize) concluída. Repo inicializado em Git, publicado em GitHub privado. 26 ficheiros committed, 0 erros de validação.
+Phase 1 consolidada com a decisão sobre o papel canónico da wiki. `ADR-002` criado e `Q-001` fechada como `decided`. Validação verificada com `scripts/validate.py`: **Erros: 0**, **Warnings: 0**.
 
 **Repo:** https://github.com/dmmgama/wiki-lab.git
 **Branch:** `main`
 
 ## What changed this session
-1. Scaffold completo de namespaces: `engineering/`, `systems-ai/`, `personal/`, `shared/` com `_index.md`.
-2. `index.md` raiz como ponto de entrada de navegação.
-3. `shared/registry.md` com namespaces e regras de escrita.
-4. `templates/` com 4 templates (research-note, wiki-page, adr, open-question).
-5. `scripts/validate.py` — validação frontmatter, naming, links. SKIP_FILES: README.md, AGENTS.md, LICENSE.
-6. Frontmatter YAML adicionado a todos os ficheiros Markdown do projecto.
-7. Enum `status` uniformizado (`decision`, não `decided`).
-8. `provenance` adicionado onde faltava.
-9. `agents.md` com regras completas (arranque, persistência, handoff, roadmap, GitHub Copilot adenda).
-10. `00-space-manuald.md` removido (versão antiga).
-11. Decisão: **não migrar pastas** — topologia actual é definitiva.
-12. Q-002, Q-003, Q-004, Q-006 → `decided`.
-13. `.gitignore` criado (Python, IDE, OS).
-14. `README.md` criado (GitHub-facing).
-15. Git init, commit inicial (26 ficheiros), push para GitHub privado `dmmgama/wiki-lab`.
-16. `gh` CLI instalado via winget.
+1. Criado `decisions/ADR-002-wiki-canonical-role.md`.
+2. `02-open-questions.md` actualizado: `Q-001` → `decided`, com referência ao novo ADR.
+3. `roadmap/ide-roadmap.md` actualizado: `Q-001` adicionada à lista de questões fechadas e próximo passo alinhado com a Phase 2.
+4. `index.md` actualizado com link para `ADR-002`.
 
 ## Open items
-- Q-001: papel canónico da wiki → `researching`.
-- Q-005: papel do NotebookLM → `open`.
-- Q-007: wiki-lab como conceito → `researching`.
+- Q-005 → `open`.
+- Q-007 → `researching`.
 - Q-008–Q-010 → `open`.
 
 ## Blockers
 Nenhum.
 
 ## Next step
-Opção A: criar conteúdo seed — `engineering/eurocodes.md` (Eurocódigos síntese, status:decision).
-Opção B: fechar Q-001 com ADR formal sobre o papel canónico da wiki.
+1. Definir `RULES.md` locais por namespace para a Phase 2.
+2. Criar 1–2 páginas seed por namespace.
 
 ## Constraints
 - Não mexer na topologia sem benefício operacional explícito.
-- Não introduzir migração, multi-wiki, routing semântico ou abstrações novas.
+- Não introduzir multi-wiki, routing semântico ou abstrações novas.
 
 ## Files updated this session
-- Todos os ficheiros do repo (scaffold + frontmatter + validação).
-- `.gitignore` (criado)
-- `README.md` (criado)
-- `handoff.md` (sobrescrito)
-- `roadmap/ide-roadmap.md` (actualizado)
+- `decisions/ADR-002-wiki-canonical-role.md`
+- `02-open-questions.md`
+- `roadmap/ide-roadmap.md`
+- `index.md`
+- `handoff.md`
 
 ## Read first next session
 1. `handoff.md` — este ficheiro.
 2. `roadmap/ide-roadmap.md` — fonte de verdade de execução.
-3. `index.md` — navegação raiz.
-3. `index.md` — navegação do repo.
+3. `decisions/ADR-002-wiki-canonical-role.md` — decisão acabada de fechar.

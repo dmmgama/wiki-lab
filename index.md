@@ -35,6 +35,7 @@ provenance: ["ADR-001", "00-space-manual.md"]
 
 ### Decisions
 - [decisions/ADR-001-single-repo-with-namespaces.md](decisions/ADR-001-single-repo-with-namespaces.md)
+- [decisions/ADR-002-wiki-canonical-role.md](decisions/ADR-002-wiki-canonical-role.md)
 
 ### Foundations
 - [foundations/00-what-is-an-llm-wiki.md](foundations/00-what-is-an-llm-wiki.md)

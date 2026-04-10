@@ -26,11 +26,10 @@ Este documento regista dúvidas, tensões, hipóteses e perguntas em aberto que 
 ---
 
 ## Q-001 — What is the canonical role of the wiki?
-**Status:** researching  
+**Status:** decided  
 **Why it matters:** sem esta resposta, todo o resto fica enviesado.  
-**Current leaning:** a wiki deve ser camada curada de decisão, síntese e memória operacional, não substituto total de research ou corpus amplo.  
-**What would resolve it:** comparação explícita entre wiki, notebook, retrieval e corpus. ADR formal em falta.  
-**Related:** `foundations/00-what-is-an-llm-wiki.md` (cobre definição e distinções, mas sem ADR dedicado).
+**Resolution:** a wiki é a camada de síntese curada e memória operacional persistente do sistema; não substitui research nem corpus amplo.  
+**Decided by:** `decisions/ADR-002-wiki-canonical-role.md`.
 
 ## Q-002 — What is the right topology: single repo with namespaces, or something else?
 **Status:** decided  
